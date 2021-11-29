@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background: url(./bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.banner-heading {
+  margin-bottom: 4rem;
+  height: 20rem;
+  -webkit-perspective: 50rem;
+          perspective: 50rem;
+  overflow: hidden;
+}
+
+.banner-heading span {
+  font-size: 12rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateZ(8rem);
+          transform: translateZ(8rem);
+  opacity: 0;
+  letter-spacing: 3rem;
+}
+
+.heading-1 {
+  -webkit-animation: animateHeading 12s 3s infinite;
+          animation: animateHeading 12s 3s infinite;
+}
+
+.heading-2 {
+  -webkit-animation: animateHeading 12s 6s infinite;
+          animation: animateHeading 12s 6s infinite;
+}
+
+.heading-3 {
+  -webkit-animation: animateHeading 12s 9s infinite;
+          animation: animateHeading 12s 9s infinite;
+}
+
+.heading-4 {
+  -webkit-animation: animateHeading 12s 12s infinite;
+          animation: animateHeading 12s 12s infinite;
+}
+
+@-webkit-keyframes animateHeading {
+  0% {
+    -webkit-transform: translateZ(8rem);
+            transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+  3% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 1.5rem;
+  }
+  25% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 1.5rem;
+  }
+  28% {
+    -webkit-transform: translateZ(8);
+            transform: translateZ(8);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+  100% {
+    -webkit-transform: translateZ(8);
+            transform: translateZ(8);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+}
+
+@keyframes animateHeading {
+  0% {
+    -webkit-transform: translateZ(8rem);
+            transform: translateZ(8rem);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+  3% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 1.5rem;
+  }
+  25% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 1.5rem;
+  }
+  28% {
+    -webkit-transform: translateZ(8);
+            transform: translateZ(8);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+  100% {
+    -webkit-transform: translateZ(8);
+            transform: translateZ(8);
+    opacity: 0;
+    letter-spacing: 3rem;
+  }
+}
+
+.banner-paragraph {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 35%;
+  margin: 0 auto 4rem;
+  padding: 1rem 1rem;
+  -webkit-box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.banner-btn {
+  width: 30rem;
+  height: 6rem;
+  margin-top: 5rem;
+  background: -webkit-gradient(linear, left top, right top, from(dimgray), to(#313131));
+  background: linear-gradient(to right, dimgray, #313131);
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 3rem;
+  border: 0.1rem solid #414141;
+  cursor: pointer;
+  text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=style.css.map */
